@@ -11,7 +11,8 @@ This role requires a debian compliant system such as ubuntu.
 Role Variables
 --------------
 
-No variables
+debian:
+    version: wheezy
 
 Dependencies
 ------------
@@ -23,7 +24,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-haproxy }
+         - { role: loranger.debian-haproxy, debian.version: wheezy }
 
 Tasks
 -----
