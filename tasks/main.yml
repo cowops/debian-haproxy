@@ -4,7 +4,7 @@
 
 - name: install haproxy
   apt:
-    name: {{ packages }}
+    name: "{{ packages }}"
     state: latest
   with_items:
     - haproxy
